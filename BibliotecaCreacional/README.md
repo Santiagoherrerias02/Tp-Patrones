@@ -29,4 +29,4 @@ Ejecutar los ejemplos desde **IntelliJ IDEA** o cualquier IDE para Java.
 ---
 
 ## 📑 Notas
-Versión implementada utilizando **Lombok** para simplificar la escritura de código.
+Versión implementada utilizando **Lombok** para simplificar la escritura de código
