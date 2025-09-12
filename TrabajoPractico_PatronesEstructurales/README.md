@@ -31,4 +31,4 @@ Ejecutar el proyecto desde **IntelliJ IDEA** o cualquier IDE para Java.
 ---
 
 ## 📑 Notas
-Versión implementada utilizando **Lombok** para simplificar el código.
+Versión implementada utilizando **Lombok** para simplificar el código
