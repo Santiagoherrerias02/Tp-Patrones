@@ -32,5 +32,5 @@ Ejecutar el proyecto desde **IntelliJ IDEA** o cualquier IDE para Java.
 ---
 
 ## 📑 Notas
-Versión implementada **sin Lombok**, para mostrar cómo se verían los patrones con el código escrito manualmente.
+Versión implementada **sin Lombok**, para mostrar cómo se verían los patrones con el código escrito manualmente
 
