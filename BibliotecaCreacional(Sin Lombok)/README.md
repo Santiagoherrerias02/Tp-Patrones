@@ -30,4 +30,4 @@ Ejecutar los ejemplos desde **IntelliJ IDEA** o cualquier IDE para Java.
 ---
 
 ## 📑 Notas
-Versión implementada **sin Lombok**, para mostrar la escritura manual de todos los métodos de soporte.
+Versión implementada **sin Lombok**, para mostrar la escritura manual de todos los métodos de soporte
