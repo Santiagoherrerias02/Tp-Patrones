@@ -138,7 +138,7 @@ public class Main {
         menu2.mostrar("");
 
         System.out.println("========================================");
-        System.out.println("         DEMO PATRÓN PROXY");
+        System.out.println("            FIN DE DEMO");
         System.out.println("========================================");
     }
 }
