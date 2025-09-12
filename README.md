@@ -5,8 +5,12 @@ Incluye versiones **con y sin Lombok** para cada patrón.
 
 ---
 
-## 👤 Autor Principal
+## 👥 Integrantes del Grupo
 - **Santiago Herrerias** - Legajo **50953**
+- **Luna Valentina** - Legajo **50988**
+- **Cruz Leila** - Legajo **50860**
+- **Funes Joaquín** - Legajo **50909**
+- **Dichara Ramiro** - Legajo **50879**
 
 ---
 
@@ -44,4 +48,5 @@ Abrir el proyecto en **IntelliJ IDEA** (o cualquier IDE para Java), compilar y e
 ---
 
 ## 📑 Notas
-Este repositorio sirve como práctica académica de la materia **Desarrollo de Software**.
+Este repositorio corresponde al **Trabajo Práctico de la materia Desarrollo de Software**.
+
