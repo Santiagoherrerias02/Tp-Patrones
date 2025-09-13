@@ -1,5 +1,9 @@
 package Adapter;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+
 public class AdaptadorImpresora implements Impresora{
     private ImpresoraTexto impresoraTexto;
 

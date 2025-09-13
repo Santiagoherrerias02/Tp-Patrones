@@ -12,5 +12,4 @@ public class Plato implements ElementoMenu{
     public void mostrar(String indentacion) {
         System.out.println(indentacion + "[Plato] " + nombre);
     }
-
 }

@@ -1,15 +1,16 @@
 package Composite;
 
+import lombok.Builder;
 import java.util.ArrayList;
 import java.util.List;
 
+@Builder
+
 public class Menu implements ElementoMenu{
     private String nombre;
+    @Builder.Default
     private List<ElementoMenu> comidas = new ArrayList<>();
 
-    public Menu(String nombre) {
-        this.nombre = nombre;
-    }
 
     public void addComida(ElementoMenu comida){
         comidas.add(comida);

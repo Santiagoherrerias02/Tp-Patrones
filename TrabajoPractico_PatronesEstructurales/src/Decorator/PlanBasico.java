@@ -1,11 +1,5 @@
 package Decorator;
 
-import lombok.Getter;
-import lombok.ToString;
-
-@Getter
-@ToString
-
 public class PlanBasico implements Suscripcion{
     @Override
     public String descripcion() {

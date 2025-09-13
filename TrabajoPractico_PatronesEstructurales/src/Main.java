@@ -10,6 +10,8 @@ import Flyweight.Arbol;
 import Flyweight.FabricaDeArboles;
 import Proxy.Archivo;
 import Proxy.ArchivoProxy;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -73,7 +75,11 @@ public class Main {
         Envio envio = new Envio();
 
         TiendaFacade compra = new TiendaFacade(carrito, pago, envio);
-        compra.comprar(8);
+        compra.comprar("Remera m/c");
+        compra.comprar("Pantalon");
+        compra.comprar("Funda celular");
+
+        compra.terminarCompra();
 
         System.out.println("========================================");
         System.out.println("            FIN DE DEMO");
@@ -108,10 +114,10 @@ public class Main {
         System.out.println("         DEMO PATRÓN PROXY");
         System.out.println("========================================");
 
-        Archivo archivo1 = new ArchivoProxy("NotasSecretas.txt", "santiago");
+        Archivo archivo1 = ArchivoProxy.builder().nombre("NotasSecretas.txt").usuario("santiago").build();
         archivo1.abrir();
 
-        Archivo archivo2 = new ArchivoProxy("NotasSecretas.txt", "invitado");
+        Archivo archivo2 = ArchivoProxy.builder().nombre("NotasSecretas.txt").usuario("invitado").build();
         archivo2.abrir();
 
         System.out.println("========================================");
@@ -127,11 +133,11 @@ public class Main {
         ElementoMenu comida3 = new Plato("Arroz con pollo");
         ElementoMenu comida4 = new Plato("Queso Rallado");
 
-        Menu menu1 = new Menu("Menu Pastas");
+        Menu menu1 = Menu.builder().nombre("Menu Pastas").comidas(new ArrayList<>()).build();
         menu1.addComida(comida1);
         menu1.addComida(comida4);
 
-        Menu menu2 = new Menu("Menu del Dia");
+        Menu menu2 = Menu.builder().nombre("Menu del Dia").comidas(new ArrayList<>()).build();
         menu2.addComida(comida2);
         menu2.addComida(menu1);
 
