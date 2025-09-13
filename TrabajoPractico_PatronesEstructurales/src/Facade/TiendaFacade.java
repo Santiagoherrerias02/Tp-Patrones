@@ -10,7 +10,7 @@ public class TiendaFacade {
     private Envio envio;
 
         public void comprar(String articulos) {
-            System.out.println("[Facade] Ingrasando Compra");
+            System.out.println("[Facade] Ingresando Compra");
             carrito.elegirArticulos(articulos);
         }
         public void terminarCompra(){
