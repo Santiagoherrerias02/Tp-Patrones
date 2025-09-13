@@ -10,9 +10,9 @@ public class TiendaFacade {
         this.pago = pago;
         this.envio = envio;
     }
-        public void comprar() {
+        public void comprar(int articulos) {
             System.out.println("[Facade] Iniciando Compra");
-            carrito.agregar(8);
+            carrito.agregar(articulos);
             carrito.eliminar();
             pago.PagoEfectivo();
             envio.EnvioExpress();
