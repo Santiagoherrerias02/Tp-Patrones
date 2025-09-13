@@ -16,10 +16,4 @@ public class Plato implements ElementoMenu {
         System.out.println(indentacion + "[Plato] " + nombre);
     }
 
-    @Override
-    public String toString() {
-        return "Plato{" +
-                "nombre='" + nombre + '\'' +
-                '}';
-    }
 }

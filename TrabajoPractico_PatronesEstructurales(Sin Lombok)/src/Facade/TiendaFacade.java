@@ -9,14 +9,16 @@ public class TiendaFacade {
         this.carrito = carrito;
         this.pago = pago;
         this.envio = envio;
+        System.out.println("[Facade] Ingresando Compra");
     }
-        public void comprar(int articulos) {
-            System.out.println("[Facade] Iniciando Compra");
-            carrito.agregar(articulos);
-            carrito.eliminar();
-            pago.PagoEfectivo();
-            envio.EnvioExpress();
-            System.out.println("[Facade] Compra finalizada");
-        }
+    public void comprar(String articulos) {
+
+        carrito.elegirArticulos(articulos);
+    }
+    public void terminarCompra(){
+        pago.PagoEfectivo();
+        envio.EnvioExpress();
+        System.out.println("[Facade] Compra finalizada");
+    }
     }
 

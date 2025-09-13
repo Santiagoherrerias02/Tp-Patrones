@@ -73,7 +73,11 @@ public class Main {
         Envio envio = new Envio();
 
         TiendaFacade compra = new TiendaFacade(carrito, pago, envio);
-        compra.comprar(8);
+        compra.comprar("Remera m/c");
+        compra.comprar("Pantalon");
+        compra.comprar("Funda celular");
+
+        compra.terminarCompra();
 
         System.out.println("========================================");
         System.out.println("            FIN DE DEMO");

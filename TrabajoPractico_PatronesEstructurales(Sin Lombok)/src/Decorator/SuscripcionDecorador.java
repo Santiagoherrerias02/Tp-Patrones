@@ -21,10 +21,4 @@ public abstract class SuscripcionDecorador implements Suscripcion {
         return suscripcion.costo();
     }
 
-    @Override
-    public String toString() {
-        return "SuscripcionDecorador{" +
-                "suscripcion=" + suscripcion +
-                '}';
-    }
 }
