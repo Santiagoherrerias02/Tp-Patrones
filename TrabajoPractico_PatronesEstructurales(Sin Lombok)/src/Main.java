@@ -73,7 +73,7 @@ public class Main {
         Envio envio = new Envio();
 
         TiendaFacade compra = new TiendaFacade(carrito, pago, envio);
-        compra.comprar();
+        compra.comprar(8);
 
         System.out.println("========================================");
         System.out.println("            FIN DE DEMO");
