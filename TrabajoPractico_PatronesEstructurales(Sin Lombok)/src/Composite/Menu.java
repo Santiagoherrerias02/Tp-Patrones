@@ -7,11 +7,12 @@ public class Menu implements ElementoMenu{
     private String nombre;
     private List<ElementoMenu> comidas = new ArrayList<>();
 
-    public Menu(String nombre) {
+    public Menu(String nombre, List<ElementoMenu> comidas) {
         this.nombre = nombre;
+        this.comidas = new ArrayList<>();
     }
 
-    public void addComida(ElementoMenu comida){
+    public void agregarComida(ElementoMenu comida){
         comidas.add(comida);
     }
 

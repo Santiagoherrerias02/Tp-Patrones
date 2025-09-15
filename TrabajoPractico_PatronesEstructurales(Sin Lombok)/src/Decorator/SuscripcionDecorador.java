@@ -7,10 +7,6 @@ public abstract class SuscripcionDecorador implements Suscripcion {
         this.suscripcion = suscripcion;
     }
 
-    public Suscripcion getSuscripcion() {
-        return suscripcion;
-    }
-
     @Override
     public String descripcion() {
         return suscripcion.descripcion();

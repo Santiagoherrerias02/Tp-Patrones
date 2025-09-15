@@ -11,10 +11,5 @@ public class PlanBasico implements Suscripcion {
     public double costo() {
         return 1000;
     }
-
-    @Override
-    public String toString() {
-        return "PlanBasico{descripcion='" + descripcion() + "', costo=" + costo() + "}";
-    }
 }
 

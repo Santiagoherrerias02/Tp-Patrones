@@ -7,10 +7,6 @@ public class Plato implements ElementoMenu {
         this.nombre = nombre;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
     @Override
     public void mostrar(String indentacion) {
         System.out.println(indentacion + "[Plato] " + nombre);

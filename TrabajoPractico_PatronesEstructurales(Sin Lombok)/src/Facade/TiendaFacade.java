@@ -11,14 +11,15 @@ public class TiendaFacade {
         this.envio = envio;
         System.out.println("[Facade] Ingresando Compra");
     }
-    public void comprar(String articulos) {
 
+    public void comprar(String articulos) {
         carrito.elegirArticulos(articulos);
     }
+
     public void terminarCompra(){
         pago.PagoEfectivo();
         envio.EnvioExpress();
         System.out.println("[Facade] Compra finalizada");
     }
-    }
+}
 
