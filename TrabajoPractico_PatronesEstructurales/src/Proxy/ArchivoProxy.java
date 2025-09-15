@@ -4,7 +4,6 @@ import lombok.Builder;
 
 @Builder
 
-// Proxy que controla acceso
 public class ArchivoProxy implements Archivo {
     private final String nombre;
     private final String usuario;

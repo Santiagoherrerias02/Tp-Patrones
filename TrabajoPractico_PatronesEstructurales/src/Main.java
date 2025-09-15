@@ -11,7 +11,6 @@ import Flyweight.FabricaDeArboles;
 import Proxy.Archivo;
 import Proxy.ArchivoProxy;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -92,11 +91,15 @@ public class Main {
 
         FabricaDeArboles fabrica = new FabricaDeArboles();
         String[] tipos = {"Roble", "Pino", "Abeto"};
+        String[] texturas = {"500px","250px","375px"};
+        String[] colores = {"Marron", "Verde", "Amarillo"};
 
         int cantidad = 1_000_000;
         for (int i = 0; i < cantidad; i++) {
             String tipo = tipos[i % tipos.length];
-            Arbol arbol = fabrica.obtenerArbol(tipo, "500px", "Verde");
+            String textura = texturas[i % texturas.length];
+            String color = colores[i % colores.length];
+            Arbol arbol = fabrica.obtenerArbol(tipo, textura, color);
 
             if (i < 10) {  // Solo mostramos los primeros 10
                 arbol.dibujar(i % 1000, i / 1000);
@@ -134,12 +137,12 @@ public class Main {
         ElementoMenu comida4 = new Plato("Queso Rallado");
 
         Menu menu1 = Menu.builder().nombre("Menu Pastas").comidas(new ArrayList<>()).build();
-        menu1.addComida(comida1);
-        menu1.addComida(comida4);
+        menu1.agregarComida(comida1);
+        menu1.agregarComida(comida4);
 
         Menu menu2 = Menu.builder().nombre("Menu del Dia").comidas(new ArrayList<>()).build();
-        menu2.addComida(comida2);
-        menu2.addComida(menu1);
+        menu2.agregarComida(comida2);
+        menu2.agregarComida(menu1);
 
         menu2.mostrar("");
 

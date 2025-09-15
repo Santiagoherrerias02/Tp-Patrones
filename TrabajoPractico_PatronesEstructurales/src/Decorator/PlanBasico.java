@@ -1,6 +1,7 @@
 package Decorator;
 
 public class PlanBasico implements Suscripcion{
+
     @Override
     public String descripcion() {
         return "Plan Básico";

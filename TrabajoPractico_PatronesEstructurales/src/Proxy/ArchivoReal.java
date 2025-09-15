@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 
-// Objeto real
 public class ArchivoReal implements Archivo{
     private final String nombre;
 

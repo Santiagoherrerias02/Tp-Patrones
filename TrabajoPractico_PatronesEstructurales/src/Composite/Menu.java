@@ -11,8 +11,7 @@ public class Menu implements ElementoMenu{
     @Builder.Default
     private List<ElementoMenu> comidas = new ArrayList<>();
 
-
-    public void addComida(ElementoMenu comida){
+    public void agregarComida(ElementoMenu comida){
         comidas.add(comida);
     }
 

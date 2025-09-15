@@ -14,7 +14,7 @@ public class ArbolConcreto implements Arbol{
 
     @Override
     public void dibujar(int x, int y) {
-        System.out.println("Dibujando arbol ´" + tipo + "´ en posición (" + x + " , " + y +")");
+        System.out.println("Dibujando arbol ´" + tipo + ", "+ textura +", "+ color +"´ en posición (" + x + " , " + y +")");
 
     }
 }
