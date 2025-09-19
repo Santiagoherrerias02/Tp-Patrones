@@ -9,16 +9,16 @@ import java.util.List;
 public class Menu implements ElementoMenu{
     private String nombre;
     @Builder.Default
-    private List<ElementoMenu> comidas = new ArrayList<>();
+    private List<ElementoMenu> itemMenu = new ArrayList<>();
 
     public void agregarComida(ElementoMenu comida){
-        comidas.add(comida);
+        itemMenu.add(comida);
     }
 
     @Override
     public void mostrar(String indentacion) {
         System.out.println(indentacion + "[Menú] " + nombre);
-        for (ElementoMenu comida : comidas) {
+        for (ElementoMenu comida : itemMenu) {
             comida.mostrar(indentacion + "   ");
         }
     }

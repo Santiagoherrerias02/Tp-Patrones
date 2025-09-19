@@ -136,11 +136,11 @@ public class Main {
         ElementoMenu comida3 = new Plato("Arroz con pollo");
         ElementoMenu comida4 = new Plato("Queso Rallado");
 
-        Menu menu1 = Menu.builder().nombre("Menu Pastas").comidas(new ArrayList<>()).build();
+        Menu menu1 = Menu.builder().nombre("Menu Pastas").itemMenu(new ArrayList<>()).build();
         menu1.agregarComida(comida1);
         menu1.agregarComida(comida4);
 
-        Menu menu2 = Menu.builder().nombre("Menu del Dia").comidas(new ArrayList<>()).build();
+        Menu menu2 = Menu.builder().nombre("Menu del Dia").itemMenu(new ArrayList<>()).build();
         menu2.agregarComida(comida2);
         menu2.agregarComida(menu1);
 
