@@ -5,21 +5,21 @@ import java.util.List;
 
 public class Menu implements ElementoMenu{
     private String nombre;
-    private List<ElementoMenu> comidas = new ArrayList<>();
+    private List<ElementoMenu> itemMenu = new ArrayList<>();
 
-    public Menu(String nombre, List<ElementoMenu> comidas) {
+    public Menu(String nombre, List<ElementoMenu> itemMenu) {
         this.nombre = nombre;
-        this.comidas = new ArrayList<>();
+        this.itemMenu = new ArrayList<>();
     }
 
     public void agregarComida(ElementoMenu comida){
-        comidas.add(comida);
+        itemMenu.add(comida);
     }
 
     @Override
     public void mostrar(String indentacion) {
         System.out.println(indentacion + "[Menú] " + nombre);
-        for (ElementoMenu comida : comidas) {
+        for (ElementoMenu comida : itemMenu) {
             comida.mostrar(indentacion + "   ");
         }
     }
