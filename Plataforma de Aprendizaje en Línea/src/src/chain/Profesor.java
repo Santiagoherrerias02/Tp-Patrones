@@ -10,7 +10,7 @@ public class Profesor implements Handler {
 
     @Override
     public void handle(Solicitud s) {
-        if (s.getTipo().equals("media")) {
+        if (s.tipo().equals("media")) {
             System.out.println("Profesor resuelve la solicitud intermedia.");
         } else if (next != null) {
             next.handle(s);

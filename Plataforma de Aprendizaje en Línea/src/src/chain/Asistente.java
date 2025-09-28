@@ -10,7 +10,7 @@ public class Asistente implements Handler {
 
     @Override
     public void handle(Solicitud s) {
-        if (s.getTipo().equals("básica")) {
+        if (s.tipo().equals("básica")) {
             System.out.println("Asistente resuelve la solicitud básica.");
         } else if (next != null) {
             next.handle(s);
